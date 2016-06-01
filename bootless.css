@@ -235,7 +235,7 @@ label,
 legend {
   font-size: 1.6rem;
   font-weight: 700;
-  display: block;
+  display: inline-block;
   margin-bottom: 0.5rem;
 }
 
@@ -1049,4 +1049,91 @@ h6 {
   .col-lg-offset-0 {
     margin-left: 0;
   }
+}
+
+
+
+
+/*******Mine***/
+/***
+Tabs
+****/
+.tabs {
+  position: relative;   
+  min-height: 400px; /* This part sucks */
+  clear: both;
+  margin: 50px 0 25px;
+  background: white;
+}
+.tab {
+  float: right;
+   
+}
+.tab label {
+  background: #fff; 
+  padding: 10px; 
+  border-bottom: 3px solid #fff; 
+  margin-left: -1px; 
+  position: relative;
+  right: 1px; 
+  top: -47px;
+  -webkit-transition: background-color .17s linear;
+  font-weight: 200;
+}
+.tabs h4{
+  left: 1px; 
+  top: -47px;
+  float: left;
+  position: relative;
+}
+.tab [type=radio] {
+  display: none;   
+}
+.tab .content {
+  position: absolute;
+  top: -1px;
+  left: 0;
+  background: white;
+  right: 0;
+  bottom: 0;
+  padding: 20px;
+  border: 1px solid #ccc; 
+  -webkit-transition: opacity .6s linear;
+  opacity: 0;
+  overflow: auto;
+}
+.tab  [type=radio]:checked ~ label {
+  background: white;
+  border-bottom: 3px solid #2196f3; 
+  z-index: 2;
+}
+.tab  [type=radio]:checked ~ label ~ .content {
+  z-index: 1;
+  opacity: 1;
+}
+/***
+Helpers
+****/
+.helper-date {
+    color: #bababa;
+    display: inline-block;
+    float: right;
+    margin: 0;
+}
+.helper-name{
+    color: #060606;
+    display: inline-block;
+    float: left;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.display-table::before, .display-table::after{
+  content: " ";
+  display: table;
+}
+.display-table::after{
+   clear: both;
+}
+.italic{
+  font-style: italic;
 }
