@@ -1,4 +1,4 @@
-# Bootless
+# Bootless - CSS Only Framework
 
 Everyone that has read bootstrap source code understand how much usless code it has. 
 I started this small css frameworks that basically takes everything that you love from all the frameworks

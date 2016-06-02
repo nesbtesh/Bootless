@@ -1,9 +1,6 @@
 /*!
- * Milligram v1.1.0
- * http://milligram.github.io
- *
- * Copyright (c) 2016 CJ Patoilo
- * Licensed under the MIT license
+ * Bootless
+ * 
 */
 
 
@@ -49,6 +46,16 @@ input[type='submit'] {
   text-transform: uppercase;
   white-space: nowrap;
 }
+.button.small,
+button.small,
+input[type='button'].small,
+input[type='reset'].small,
+input[type='submit'].small{
+  font-size: 0.9rem;
+  line-height: 2rem;
+  height: 2.8rem;
+  padding: 0 1rem;
+} 
 .button:hover, .button:focus,
 button:hover,
 button:focus,
@@ -179,17 +186,22 @@ input[type='submit'].button-clear[disabled]:focus {
 }
 hr {
   border: 0;
-  border-top: 0.1rem solid #f4f5f6;
+  border-top: 0.1rem solid #d1d1d1;
+  margin-bottom: 1.5rem;
+  margin-top: 1rem;
+}
+.hr-divider{
+  border-top: 0.1rem solid #d1d1d1;
   margin-bottom: 3.5rem;
   margin-top: 3rem;
 }
-
 input[type='email'],
 input[type='number'],
 input[type='password'],
 input[type='search'],
 input[type='tel'],
 input[type='text'],
+input[type='date'],
 input[type='url'],
 textarea,
 select {
@@ -210,6 +222,7 @@ input[type='password']:focus,
 input[type='search']:focus,
 input[type='tel']:focus,
 input[type='text']:focus,
+input[type='date']:focus,
 input[type='url']:focus,
 textarea:focus,
 select:focus {
@@ -1137,3 +1150,87 @@ Helpers
 .italic{
   font-style: italic;
 }
+.margin-20{
+  margin-bottom: 20px;
+}
+
+/****IMAGE UPLOAD WRAPPER***/
+#image-upload-wrapper {
+    margin-top: 0px;
+    width: 98%;
+    height: 304px;
+    position: relative;
+    cursor: pointer;
+    overflow: hidden;
+}
+    
+    /* Make sure the form fills the box */
+    #image-upload-wrapper form {
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        width: inherit;
+        height: 189px;
+        margin: 0;
+        padding: 0;
+    }
+    
+    /* Again, make sure the image fills the box */
+    #image-upload-wrapper img {
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        width: inherit;
+        height: inherit;
+        cursor: pointer;
+        
+        /* We use the z-index to make sure the file input */
+        /* is above the image */
+        z-index: 100;
+        
+        /* Set a background color in case of times when no */
+        /* image is displayed */
+        background: #aaa;
+    }
+    
+    /* The overlay message that tells the user to click the */
+    /* image. We position it at the bottom of the wrapper. */
+    #image-upload-wrapper .overlay {
+        position: absolute;
+        bottom: 0px;
+        left: 0px;
+        width: inherit;
+        z-index: 101;
+        padding: 15px 0 25px;
+        text-align: center;
+        color: #fff;
+        background: #111;
+        background: rgba(0,0,0,0.5);
+        cursor: pointer;
+        
+        /* The overlay is only visible when the image */
+        /* is hovered over */
+        opacity: 0;
+        transition: opacity .25s linear;
+    }
+
+        #image-upload-wrapper:hover .overlay {
+            opacity: 1;
+        }
+    
+    /* Position the input over top of the image */
+    #image-upload-wrapper input {
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        min-width: 100%;
+        height: inherit;
+        z-index: 102;
+        cursor: pointer;
+        
+        /* Make it invisible so that the user sees the */
+        /* image instead of the input. You cannot use */
+        /* visibilty:hidden here because it messes with */
+        /* the click event in the browser. */
+        opacity: 0;
+    }
