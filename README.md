@@ -21,3 +21,7 @@ and makes one light great one. I just started it, so there are no docs yet, but 
 ## Acknowledgments
 * Bootstrap 
 * Milligram
+
+## License
+
+**MIT**
