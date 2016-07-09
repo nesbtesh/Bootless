@@ -1,7 +1,7 @@
 # Bootless - CSS Only Framework
 
 CSS only framework
-**V0.1**
+**V1.0**
 
 ## What is Bootless?
 
