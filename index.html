@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Bootless Documentation</title>
+	<link rel="stylesheet" type="text/css" href="bootless.css">
+	<link rel="stylesheet" type="text/css" href="docs/style.css">
+</head>
+<body>
+	<nav class="nav depth-1">
+		<div class="nav-wrapper container">
+			<h4>Bootless</h4>
+			<ul class="float-right">
+				<li>
+					<a href="https://github.com/nesbtesh/Bootless">Github</a>
+				</li>
+			</ul>
+		</div>
+	</nav>
+	<div class="main-content container">
+		<div class="section">	
+			<h3>Why Bootless?</h3>
+			<p>
+				Everyone that has read Bootstrap source code understand how much usless code it has. I started this small css frameworks that basically takes everything that you love from all the frameworks and makes one light great one. I just started it, so there are no docs yet, but expect them soon.
+			</p>
+		</div>
+		
+		<section id="grids" class="section">	
+			<h4>Responsive Grid</h4>
+			<div>
+				<label>Desktops</label>
+				<div class="row">
+					<div class="row-show col-lg-3">.col-lg-3</div>
+					<div class="row-show col-lg-3">.col-lg-3</div>
+					<div class="row-show col-lg-3">.col-lg-3</div>
+					<div class="row-show col-lg-3">.col-lg-3</div>
+				</div>
+				<br>
+				<br>
+				<br>
+				<pre class="code prettyprint">
+					<code class="code-content">
+	<div class="row">
+		<div class="col-lg-4">.col-lg-4</div>
+		<div class="col-lg-4">.col-lg-4</div>
+		<div class="col-lg-4">.col-lg-4</div>
+		<div class="col-lg-4">.col-lg-4</div>
+	</div>
+					</code>
+				</pre>
+			</div>
+			<div>
+				<label>Mobile Tablets and Desktops</label>
+				<div class="row">
+					<div class="row-show col-lg-3 col-md-3 col-xs-3">.col-lg-3 .col-md-3 .col-xs-3</div>
+					<div class="row-show col-lg-3 col-md-3 col-xs-3">.col-lg-3 .col-md-3 .col-xs-3</div>
+					<div class="row-show col-lg-3 col-md-3 col-xs-3">.col-lg-3 .col-md-3 .col-xs-3</div>
+					<div class="row-show col-lg-3 col-md-3 col-xs-3">.col-lg-3 .col-md-3 .col-xs-3</div>
+				</div>
+				<br>
+				<br>
+				<br>
+				<pre class="code prettyprint">
+					<code class="code-content">
+	<div class="row">
+		<div class="col-lg-4">.col-lg-4</div>
+		<div class="col-lg-4">.col-lg-4</div>
+		<div class="col-lg-4">.col-lg-4</div>
+		<div class="col-lg-4">.col-lg-4</div>
+	</div>
+					</code>
+				</pre>
+			</div>
+			<div>
+				<label>Combine them how ever you want</label>
+				<div class="row">
+					<div class="row-show col-lg-6">.col-lg-6</div>
+					<div class="row-show col-lg-2">.col-lg-2</div>
+					<div class="row-show col-lg-4">.col-lg-4</div>
+				</div>
+				<br>
+				<br>
+				<br>
+				<pre class="code prettyprint">
+					<code class="code-content">
+	<div class="row">
+		<div class="col-lg-4">.col-lg-4</div>
+		<div class="col-lg-4">.col-lg-4</div>
+		<div class="col-lg-4">.col-lg-4</div>
+		<div class="col-lg-4">.col-lg-4</div>
+	</div>
+					</code>
+				</pre>
+			</div>
+		</section>
+		<section id="typography" class="section">	
+			<h4>Typography</h4>
+			<div class="">
+				<h1>I am an H1</h1>
+				<h2>I am an H2</h2>
+				<h3>I am an H3</h3>
+				<h4>I am an H4</h4>
+				<h5>I am an H5</h5>
+				<h6>I am an H6</h6>
+			</div>
+		</section>
+		<section id="buttons" class="section">	
+			<h4>Buttons</h4>
+			<p>
+				<p>
+					<a class="button" href="#">Default Button</a>
+					<button class="button button-outline">Outlined Button</button>
+					<input class="button button-clear" value="Clear Button" type="submit">
+				</p>
+				<p>
+					<input class="button blue" value="Button Blue" type="submit">
+					<button class="button blue button-outline">Outlined Button</button>
+				</p>
+				<p>
+					<input class="button red" value="Button Blue" type="submit">
+					<button class="button red button-outline">Outlined Button</button>
+				</p>
+				<p>
+					<input class="button green" value="Button Blue" type="submit">
+					<button class="button green button-outline">Outlined Button</button>
+				</p>
+			</p>
+			<pre class="code prettyprint">
+				<code class="code-content">
+<!-- Button Default Outline -->
+<a class="button" href="#">Default Button</a>
+
+<!-- Button Default Outline -->
+<button class="button button-outline">Outlined Button</button>
+
+<!-- Clear Button-->
+<input class="button button-clear" type="submit" value="Clear Button">
+
+<!-- Button Color -->
+<input class="button blue" value="Button Blue" type="submit">
+
+<!-- Button Color Outline -->
+<input class="button button-outline blue" value="Button Blue" type="submit">
+				</code>
+			</pre>
+		</section>
+
+		<section id="forms" class="section">	
+			<h4>Forms</h4>
+			<p>
+				<p>
+					<label>Input</label>
+					<input type="text" placeholder="Input">
+				</p>
+				<p>
+					<label>Disabled Input</label>
+					<input type="text" placeholder="Disabled" disabled>
+				</p>
+				<p>
+					<label>Text Area</label>
+					<textarea placeholder="textarea"></textarea>
+				</p>
+				<p>
+					<select>
+						<option>Option 1</option>
+						<option>Option 2</option>
+						<option>Option 3</option>
+						<option>Option 4</option>
+						<option>Option 5</option>
+						<option>Option 6</option>
+					</select>
+				</p>
+			</p>
+			<pre class="code prettyprint">
+				<code class="code-content">
+<!-- Input -->
+<input type="text" placeholder="Input">
+
+<!-- Disabled Input -->
+<input type="text" placeholder="Disabled" disabled>
+
+<!-- Text Area -->
+<textarea placeholder="textarea"></textarea>
+
+<!-- Select Input -->
+<select>
+	<option>Option 1</option>
+	<option>Option 2</option>
+	<option>Option 3</option>
+	<option>Option 4</option>
+	<option>Option 5</option>
+	<option>Option 6</option>
+</select>
+				</code>
+			</pre>
+		</section>
+		<section id="radio" class="section">	
+			<p>
+				<h4>Radio Buttons and Checkboxes</h4>
+				<p>
+			      	<input name="group1" type="radio" id="test1" />
+			      	<label for="test1">Red</label>
+			    </p>
+			    <p>
+			      	<input name="group1" type="radio" id="test2" />
+			      	<label for="test2">Yellow</label>
+			    </p>
+			    <p>
+			      	<input class="with-gap" name="group1" type="radio" id="test3"  />
+			      	<label for="test3">Green</label>
+			    </p>
+			     <p>
+			        <input name="group1" type="radio" id="test4" />
+	        		<label for="test4">Brown</label>
+			    </p>
+				<p>
+					<label for="test5">Checkbox</label>
+					<p>
+			      		<input type="checkbox" id="test5" />Blue Color
+			      	</p>
+			    </p>
+			</p>
+			<pre class="code prettyprint">
+				<code class="code-content">
+<!-- Radio Button -->
+<input name="group1" type="radio" id="test1" />
+
+<!-- Checkbox -->
+<input type="checkbox" id="test5" />
+				</code>
+			</pre>
+	</section>
+	<section id="blockquote" class="section">	
+		<h4>Blockquote</h4>
+		<blockquote>
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore animi sunt dicta, nulla aspernatur quibusdam, ipsa explicabo recusandae perferendis inventore voluptatem ratione et, harum esse tenetur quam modi neque unde.
+		</blockquote>
+		<pre class="code prettyprint">
+			<code class="code-content">
+<blockquote>
+Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore animi sunt dicta, nulla aspernatur quibusdam, ipsa explicabo recusandae perferendis inventore voluptatem ratione et, harum esse tenetur quam modi neque unde.
+</blockquote>
+				</code>
+			</pre>
+		</section>
+
+		<section id="errors" class="section">	
+			<h4>Error notification</h4>
+			<p class="error">
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit. A minima ut, libero nisi omnis reiciendis amet. 
+			</p>
+			<p class="notification">
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit. A minima ut, libero nisi omnis reiciendis amet. 
+			</p>
+			<p class="notification red">
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit. A minima ut, libero nisi omnis reiciendis amet. 
+			</p>
+			<pre class="code prettyprint">
+				<code class="code-content">
+<p class="error">
+Lorem ipsum dolor sit amet, consectetur adipisicing elit. A minima ut, libero nisi omnis reiciendis amet.
+</p>
+
+<p class="notification">
+	Lorem ipsum dolor sit amet, consectetur adipisicing elit. A minima ut, libero nisi omnis reiciendis amet. 
+</p>
+
+<p class="notification red">
+	Lorem ipsum dolor sit amet, consectetur adipisicing elit. A minima ut, libero nisi omnis reiciendis amet. 
+</p>
+
+<!-- Floating notification -->
+<div class="notification-container">
+	<p class="notification red">
+		Lorem ipsum dolor sit amet, consectetur adipisicing elit. A minima ut, libero nisi omnis reiciendis amet. 
+	</p>
+</div>
+				</code>
+			</pre>
+		</section>
+		<section id="container" class="section">	
+			<h4>Responsive Container</h4>
+			<div class="container container-show">
+				
+			</div>
+			<pre class="code prettyprint">
+				<code class="code-content">
+	<div class="container">
+				
+	</div>
+				</code>
+			</pre>
+		</section>
+		<section id="tables" class="section">	
+			<h4>Tables</h4>
+			<div class="">
+				<table>
+					<thead>
+						<tr>
+							<th>Name</th>
+							<th>Last</th>
+							<th>Email</th>
+							<th>Sex</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>Robert</td>
+							<td>Lyn</td>
+							<td>Myemail@example.com</td>
+							<td>Male</td>
+						</tr>
+						<tr>
+							<td>Ryan</td>
+							<td>Scott</td>
+							<td>ryan@example.com</td>
+							<td>Male</td>
+						</tr>
+						<tr>
+							<td>Alex</td>
+							<td>Laydi</td>
+							<td>alex@example.com</td>
+							<td>Female</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			<pre class="code prettyprint">
+				<code class="code-content">
+<table>
+	<thead>
+		<tr>
+			<th>Name</th>
+			<th>Last</th>
+			<th>Email</th>
+			<th>Sex</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>Robert</td>
+			<td>Lyn</td>
+			<td>Myemail@example.com</td>
+			<td>Male</td>
+		</tr>
+		<tr>
+			<td>Ryan</td>
+			<td>Scott</td>
+			<td>ryan@example.com</td>
+			<td>Male</td>
+		</tr>
+		<tr>
+			<td>Alex</td>
+			<td>Laydi</td>
+			<td>alex@example.com</td>
+			<td>Female</td>
+		</tr>
+	</tbody>
+</table>
+				</code>
+			</pre>
+		</section>
+		<section id="helpers" class="section">	
+			<h4>Helpers</h4>
+			<label>Float helpers</label>
+			<p class="container clearfix">
+				<div class="float-left float-left-show">Floating Left</div>
+				<div class="float-right float-right-show">Floating Right</div>
+			</p>
+			<br>
+			<br>
+			<label>Hide a div</label>
+			<p>Use "hide" class</p>
+			<label>Clearfix</label>
+			<p>Use "clearfix" class</p>
+			<label>Italic</label>
+			<p class="italic">Use "italic" class</p>
+			<label>Margin</label>
+			<p>Add 20px margin to bottom with "margin-20"</p>
+			<label>Align Center</label>
+			<p class="align-center">Align text center with "align-center"</p>
+			<label>Align Right</label>
+			<p class="align-right">Align text right with "align-right"</p>
+			<label>Center Div</label>
+			<div class="center">Position center with "center"</div>
+			<br>
+			<br>
+			<pre class="code prettyprint">
+				<code class="code-content">
+<div class="float-left"></div>
+
+<div class="float-right"></div>
+
+<div class="hide"></div>
+
+<div class="clearfix"></div>
+
+<p class="italic">Use "italic" class</p>
+
+<p class="align-center">Align text center with "align-center"</p>
+
+<p class="align-right">Align text right with "align-right"</p>
+
+<div class="center">Position center with "center"</div>
+				</code>
+			</pre>
+		</section>
+
+		<section id="helpers" class="section">	
+			<h4>Object Depth</h4>
+			<div class="row">
+				<div class="col-md-2"><div class="depth-0 depth-show">.depth-0</div></div>
+				<div class="col-md-2"><div class="depth-1 depth-show">.depth-1</div></div>
+				<div class="col-md-2"><div class="depth-2 depth-show">.depth-2</div></div>
+				<div class="col-md-2"><div class="depth-3 depth-show">.depth-3</div></div>
+				<div class="col-md-2"><div class="depth-4 depth-show">.depth-4</div></div>
+				<div class="col-md-2"><div class="depth-5 depth-show">.depth-5</div></div>
+			</div>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<pre class="code prettyprint">
+				<code class="code-content">
+<div class="col-md-2 depth-0">.depth-0</div>
+
+<div class="col-md-2 depth-1">.depth-1</div>
+
+<div class="col-md-2 depth-2">.depth-2</div>
+
+<div class="col-md-2 depth-3">.depth-3</div>
+
+<div class="col-md-2 depth-4">.depth-4</div>
+
+<div class="col-md-2 depth-5">.depth-5</div>
+				</code>
+			</pre>
+		</section>
+		<section id="helpers" class="section">	
+			<h4>CSS only Tabs</h4>
+			<div class="tabs">
+			   	<div class="tab">
+			       <input type="radio" name="tab-group-1" id="tab3" />
+			       <label for="tab3">Tab 3</label>
+			       
+			       <div class="content">
+			           This is tab 3 content.
+			       </div> 
+			   	</div>
+			   	<div class="tab">
+			       <input type="radio" name="tab-group-1" id="tab2" />
+			       <label for="tab2">Tab 2</label>
+			       
+			       <div class="content">
+			           This is tab 2 content.
+			       </div> 
+			   	</div>
+			   	<div class="tab">
+			       <input type="radio" name="tab-group-1" id="tab1" checked="checked" />
+			       <label for="tab1">Tab 1</label>
+			       
+			       <div class="content">
+			           This is tab 1 content.
+			       </div> 
+			   </div>
+			</div>
+			<pre class="code prettyprint">
+				<code class="code-content">
+<div class="tabs">
+   <div class="tab">
+       <input type="radio" name="tab-group-1" id="tab3" />
+       <label for="tab3">Tab 3</label>
+       
+       <div class="content">
+           This is tab 3 content.
+       </div> 
+   </div>
+   <div class="tab">
+       <input type="radio" name="tab-group-1" id="tab2" />
+       <label for="tab2">Tab 2</label>
+       
+       <div class="content">
+           This is tab 2 content.
+       </div> 
+   </div>
+   	<div class="tab">
+       <input type="radio" name="tab-group-1" id="tab1" checked="true" />
+       <label for="tab1">Tab 1</label>
+       
+       <div class="content">
+           This is tab 1 content.
+       </div> 
+   </div>
+</div>
+				</code>
+			</pre>
+		</section>		
+		<section id="helpers" class="section">	
+			<h4>Image Upload</h4>
+			<form class='image-upload-wrapper'">
+		        <input type='file' name='thumbnail' id='thumbnail' />
+		        <img />
+		        <div class='overlay'>
+		        	Click here to upload an image
+		        </div>
+		    </form>
+			<pre class="code prettyprint">
+				<code class="code-content">
+<form class='image-upload-wrapper'">
+    <input type='file' name='thumbnail' id='thumbnail' />
+    <img />
+    <div class='overlay'>
+    	Click here to upload an image
+    </div>
+</form>
+				</code>
+			</pre>
+		</section>
+		<div>
+			Licensed under MIT
+		</div>
+	</div>
+	<script type="text/javascript" src="js/script.js"></script>
+	<script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js"></script>
+</body>
+</html>

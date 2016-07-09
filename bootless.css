@@ -48,6 +48,18 @@ input[type='submit'] {
   text-transform: uppercase;
   white-space: nowrap;
 }
+.button.blue{
+  background-color: #2196f3 ;
+  border-color: #2196f3;
+}
+.button.green{
+  background-color: #4caf50 ;
+  border-color: #4caf50;
+}
+.button.red{
+  background-color: #f44336 ;
+  border-color: #f44336;
+}
 .button.small,
 button.small,
 input[type='button'].small,
@@ -110,6 +122,18 @@ input[type='button'].button-outline,
 input[type='reset'].button-outline,
 input[type='submit'].button-outline {
   color: #9b4dca;
+  background-color: transparent;
+}
+.button.button-outline.blue{
+  color: #2196f3;
+  background-color: transparent;
+}
+.button.button-outline.green{
+  color: #4caf50;
+  background-color: transparent;
+}
+.button.button-outline.red{
+  color: #f44336;
   background-color: transparent;
 }
 .button.button-outline:hover, .button.button-outline:focus,
@@ -303,7 +327,10 @@ select,
 fieldset {
   margin-bottom: 1.5rem;
 }
-
+blockquote{
+  border-left: 3px solid #9b4dca;
+  padding-left: 32px;
+}
 pre,
 blockquote,
 dl,
