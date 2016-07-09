@@ -263,6 +263,14 @@ input[type='checkbox'],
 input[type='radio'] {
   display: inline;
 }
+.error{
+    border: 0.1rem solid #fbe1e3 !important;
+    background-color: #fbe1e3;
+    color: #e73d4a;
+    border-radius: 4px;
+    padding: 15px;
+    margin: 20px 0px;
+}
 
 .label-inline {
   font-weight: normal;
@@ -1158,6 +1166,9 @@ Helpers
 .align-center{
   text-align: center;
 }
+.align-right{
+  text-align: right;
+}
 .center{
   position: absolute;
   left: 50%;
@@ -1355,4 +1366,14 @@ Helpers
 }
 .notification.red{
   background-color: #f44336;
+}
+.notification-span{
+  background-color: #f44336;
+  opacity: 0.8;
+  border: 1px solid #b71c1c;
+  border-radius: 5px;
+  max-width: 500px;
+  margin: 50px;
+  color: #fff;
+  margin: 0px auto;
 }
