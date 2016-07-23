@@ -16,7 +16,7 @@ and makes one light great one.
 ```
 ## Documentation
 	
-[Documentation](http://nesbtesh.github.io/Nessim-Btesh/bootless/)
+[Documentation](http://nesbtesh.github.io/bootless/)
 	
 ## Acknowledgments
 * Bootstrap 
