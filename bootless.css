@@ -1164,6 +1164,9 @@ Tabs
 /***
 Helpers
 ****/
+.hide{
+  display: none;
+}
 .helper-date {
     color: #bababa;
     display: inline-block;
